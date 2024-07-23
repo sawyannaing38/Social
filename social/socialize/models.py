@@ -34,3 +34,4 @@ class Post(models.Model):
 class Reactor(models.Model):
     reactor = models.ForeignKey(User, related_name="react_post", on_delete=models.CASCADE)
     post = models.ForeignKey(Post, related_name="react_person", on_delete=models.CASCADE)
+

@@ -1,0 +1,13 @@
+{% extends "socialize/layout.html" %}
+
+{% block title %}
+    Social
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h1 class="h1 alert alert-success text-center">
+            Loggin as {{request.user.username}}
+        </h1>
+    </div>
+{% endblock %}
